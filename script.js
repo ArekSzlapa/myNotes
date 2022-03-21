@@ -76,9 +76,15 @@ const checkColor = (note) => {
 const singleRemove = (id) => {
   const noteToDelete = document.getElementById(id);
   noteArea.removeChild(noteToDelete);
+  cardId--;
+};
+
+const massRemoval = () => {
+  noteArea.textContent = "";
 };
 
 addBtn.addEventListener("click", openPanel);
 cancelBtn.addEventListener("click", closePanel);
 saveBtn.addEventListener("click", addNote);
 select.addEventListener("change", selectValue);
+deleteAllBtn.addEventListener("click", massRemoval);
