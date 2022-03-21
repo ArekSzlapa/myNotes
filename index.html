@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Notes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/28aa0c5d9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <h1><i class="fas fa-sticky-note"></i>MyNotes</h1>
+      <div class="menu-buttons">
+        <button class="add icon"><i class="fas fa-plus"></i>Add</button>
+        <button class="delete-all icon">
+          <i class="fas fa-trash-alt"></i>Remove
+        </button>
+      </div>
+    </div>
+
+    <div class="note-area">
+      <!-- <div class="note">
+        <div class="note-header">
+          <h3 class="note-title">Note #1</h3>
+          <button class="delete-note"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="note-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+          deleniti non voluptate nihil repellendus corrupti. Eaque voluptatum
+          asperiores laborum odio aliquid placeat itaque unde consectetur
+          corporis inventore, natus sequi libero!
+        </div>
+      </div> -->
+    </div>
+
+    <div class="note-panel">
+      <h2>Add a note</h2>
+      <label for="category">Choose a category</label>
+      <select name="category" id="category">
+        <option value="0" disabled selected>Choose a category</option>
+        <option value="1">Work</option>
+        <option value="1">Shopping</option>
+        <option value="1">Other</option>
+      </select>
+
+      <label for="text">Type in the note text</label>
+      <textarea id="text"></textarea>
+      <p class="error">Fill in all fields!</p>
+      <div class="panel-buttons">
+        <button class="save icon"><i class="fas fa-save"></i> Save</button>
+        <button class="cancel icon">
+          <i class="fas fa-window-close"></i> Cancel
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
